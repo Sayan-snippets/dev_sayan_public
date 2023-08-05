@@ -12,7 +12,7 @@ app.set('view engine','ejs');
 app.set('views', __dirname + '/views');
 
 
-app.get("/getPersonalData" , async(req,res)=>{
+app.get("/" , async(req,res)=>{
     try {
         // Connect to the database
         await db_conn.connectToDB();
